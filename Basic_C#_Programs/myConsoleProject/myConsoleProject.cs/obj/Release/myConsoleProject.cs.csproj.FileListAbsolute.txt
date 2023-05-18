@@ -1,0 +1,6 @@
+C:\Users\User\Documents\GitHub\TheTechAcademyBasicC-SharpProjects\Basic_C#_Programs\myConsoleProject\myConsoleProject.cs\bin\Release\myConsoleProject.cs.exe.config
+C:\Users\User\Documents\GitHub\TheTechAcademyBasicC-SharpProjects\Basic_C#_Programs\myConsoleProject\myConsoleProject.cs\bin\Release\myConsoleProject.cs.exe
+C:\Users\User\Documents\GitHub\TheTechAcademyBasicC-SharpProjects\Basic_C#_Programs\myConsoleProject\myConsoleProject.cs\bin\Release\myConsoleProject.cs.pdb
+C:\Users\User\Documents\GitHub\TheTechAcademyBasicC-SharpProjects\Basic_C#_Programs\myConsoleProject\myConsoleProject.cs\obj\Release\myConsoleProject.cs.csproj.CoreCompileInputs.cache
+C:\Users\User\Documents\GitHub\TheTechAcademyBasicC-SharpProjects\Basic_C#_Programs\myConsoleProject\myConsoleProject.cs\obj\Release\myConsoleProject.cs.exe
+C:\Users\User\Documents\GitHub\TheTechAcademyBasicC-SharpProjects\Basic_C#_Programs\myConsoleProject\myConsoleProject.cs\obj\Release\myConsoleProject.cs.pdb
