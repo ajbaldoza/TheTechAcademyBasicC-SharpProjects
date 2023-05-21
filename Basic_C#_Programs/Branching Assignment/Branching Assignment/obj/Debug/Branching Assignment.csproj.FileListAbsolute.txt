@@ -1,0 +1,7 @@
+C:\Users\User\Documents\GitHub\TheTechAcademyBasicC-SharpProjects\Basic_C#_Programs\Branching Assignment\Branching Assignment\bin\Debug\Branching Assignment.exe.config
+C:\Users\User\Documents\GitHub\TheTechAcademyBasicC-SharpProjects\Basic_C#_Programs\Branching Assignment\Branching Assignment\bin\Debug\Branching Assignment.exe
+C:\Users\User\Documents\GitHub\TheTechAcademyBasicC-SharpProjects\Basic_C#_Programs\Branching Assignment\Branching Assignment\bin\Debug\Branching Assignment.pdb
+C:\Users\User\Documents\GitHub\TheTechAcademyBasicC-SharpProjects\Basic_C#_Programs\Branching Assignment\Branching Assignment\obj\Debug\Branching Assignment.csproj.AssemblyReference.cache
+C:\Users\User\Documents\GitHub\TheTechAcademyBasicC-SharpProjects\Basic_C#_Programs\Branching Assignment\Branching Assignment\obj\Debug\Branching Assignment.csproj.CoreCompileInputs.cache
+C:\Users\User\Documents\GitHub\TheTechAcademyBasicC-SharpProjects\Basic_C#_Programs\Branching Assignment\Branching Assignment\obj\Debug\Branching Assignment.exe
+C:\Users\User\Documents\GitHub\TheTechAcademyBasicC-SharpProjects\Basic_C#_Programs\Branching Assignment\Branching Assignment\obj\Debug\Branching Assignment.pdb
