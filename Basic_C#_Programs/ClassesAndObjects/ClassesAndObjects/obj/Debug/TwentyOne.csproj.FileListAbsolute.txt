@@ -1,0 +1,7 @@
+C:\Users\User\Documents\GitHub\TheTechAcademyBasicC-SharpProjects\Basic_C#_Programs\ClassesAndObjects\ClassesAndObjects\bin\Debug\ClassesAndObjects.exe.config
+C:\Users\User\Documents\GitHub\TheTechAcademyBasicC-SharpProjects\Basic_C#_Programs\ClassesAndObjects\ClassesAndObjects\bin\Debug\ClassesAndObjects.exe
+C:\Users\User\Documents\GitHub\TheTechAcademyBasicC-SharpProjects\Basic_C#_Programs\ClassesAndObjects\ClassesAndObjects\bin\Debug\ClassesAndObjects.pdb
+C:\Users\User\Documents\GitHub\TheTechAcademyBasicC-SharpProjects\Basic_C#_Programs\ClassesAndObjects\ClassesAndObjects\obj\Debug\TwentyOne.csproj.AssemblyReference.cache
+C:\Users\User\Documents\GitHub\TheTechAcademyBasicC-SharpProjects\Basic_C#_Programs\ClassesAndObjects\ClassesAndObjects\obj\Debug\TwentyOne.csproj.CoreCompileInputs.cache
+C:\Users\User\Documents\GitHub\TheTechAcademyBasicC-SharpProjects\Basic_C#_Programs\ClassesAndObjects\ClassesAndObjects\obj\Debug\ClassesAndObjects.exe
+C:\Users\User\Documents\GitHub\TheTechAcademyBasicC-SharpProjects\Basic_C#_Programs\ClassesAndObjects\ClassesAndObjects\obj\Debug\ClassesAndObjects.pdb
