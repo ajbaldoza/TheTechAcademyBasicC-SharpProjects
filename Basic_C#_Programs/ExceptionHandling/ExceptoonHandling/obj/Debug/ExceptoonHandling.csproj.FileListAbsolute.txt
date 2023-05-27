@@ -1,0 +1,7 @@
+C:\Users\User\source\repos\ExceptoonHandling\ExceptoonHandling\bin\Debug\ExceptoonHandling.exe.config
+C:\Users\User\source\repos\ExceptoonHandling\ExceptoonHandling\bin\Debug\ExceptoonHandling.exe
+C:\Users\User\source\repos\ExceptoonHandling\ExceptoonHandling\bin\Debug\ExceptoonHandling.pdb
+C:\Users\User\source\repos\ExceptoonHandling\ExceptoonHandling\obj\Debug\ExceptoonHandling.csproj.AssemblyReference.cache
+C:\Users\User\source\repos\ExceptoonHandling\ExceptoonHandling\obj\Debug\ExceptoonHandling.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\ExceptoonHandling\ExceptoonHandling\obj\Debug\ExceptoonHandling.exe
+C:\Users\User\source\repos\ExceptoonHandling\ExceptoonHandling\obj\Debug\ExceptoonHandling.pdb
