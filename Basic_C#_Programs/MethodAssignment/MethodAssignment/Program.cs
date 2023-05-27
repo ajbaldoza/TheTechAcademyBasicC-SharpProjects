@@ -1,31 +1,37 @@
 ﻿using System;
 
-// Create a class named MathOperations
-class MathOperations
+
+namespace MethodAssignment
 {
-    // Create a void method named PerformMathOperation that takes two integers as parameters
-    public void PerformMathOperation(int firstNumber, int secondNumber)
+    class Program
     {
-        // Perform a math operation on the first integer (e.g., multiply by 2)
-        int result = firstNumber * 2;
+        static void Main(string[] args)
+        {
+            // Instantiate the MathOperations class
+            MathOperations1 mathOp = new MathOperations1();
+            Console.WriteLine("Enter a number: ");
+            int num1 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Enter a second number: ");
+            try
+            {
+                //call method with 2 parameter
+                int num2 = Convert.ToInt32(Console.ReadLine());
+                int results = mathOp.MathOperation(num1, num2));
+                Console.WriteLine(num1 + " x " + num2 + " = " + results);
+            }
+            catch
+            {
+                //call method with one parameter
+                int results = mathOp.MathOperation(num1);
+                Console.WriteLine(num1 + "x Default 1 = " + results);
+            }
+            Console.ReadLine();
 
-        // Display the second integer to the screen
-        Console.WriteLine("Second Number: " + secondNumber);
-    }
-}
 
-class Program
-{
-    static void Main()
-    {
-        // Instantiate the MathOperations class
-        MathOperations mathObj = new MathOperations();
+        }
+        
+        
 
-        // Call the PerformMathOperation method in the class, passing in two numbers (5 and 10)
-        mathObj.PerformMathOperation(5, 10);
-
-        // Call the PerformMathOperation method in the class, specifying the parameters by name
-        mathObj.PerformMathOperation(firstNumber: 3, secondNumber: 7);
     }
 
 }
