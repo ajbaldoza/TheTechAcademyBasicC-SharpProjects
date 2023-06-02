@@ -19,7 +19,7 @@ namespace MethodClassAssignment
             {
                 //call method with 2 parameter
                 int num2 = Convert.ToInt32(Console.ReadLine());
-                int results = mathOp.MathOperation(num1, num2));
+                int results = mathOp.MathOperation(num1, num2);
                 Console.WriteLine(num1 + " x " + num2 + " = " + results);
             }
             catch
