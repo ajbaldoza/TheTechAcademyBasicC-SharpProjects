@@ -5,3 +5,6 @@ C:\Users\User\Documents\GitHub\TheTechAcademyBasicC-SharpProjects\Basic_C#_Progr
 C:\Users\User\Documents\GitHub\TheTechAcademyBasicC-SharpProjects\Basic_C#_Programs\ClassesAndObjects\ClassesAndObjects\obj\Debug\TwentyOne.csproj.CoreCompileInputs.cache
 C:\Users\User\Documents\GitHub\TheTechAcademyBasicC-SharpProjects\Basic_C#_Programs\ClassesAndObjects\ClassesAndObjects\obj\Debug\ClassesAndObjects.exe
 C:\Users\User\Documents\GitHub\TheTechAcademyBasicC-SharpProjects\Basic_C#_Programs\ClassesAndObjects\ClassesAndObjects\obj\Debug\ClassesAndObjects.pdb
+C:\Users\User\Documents\GitHub\TheTechAcademyBasicC-SharpProjects\Basic_C#_Programs\ClassesAndObjects\ClassesAndObjects\bin\Debug\Casino.dll
+C:\Users\User\Documents\GitHub\TheTechAcademyBasicC-SharpProjects\Basic_C#_Programs\ClassesAndObjects\ClassesAndObjects\bin\Debug\Casino.pdb
+C:\Users\User\Documents\GitHub\TheTechAcademyBasicC-SharpProjects\Basic_C#_Programs\ClassesAndObjects\ClassesAndObjects\obj\Debug\TwentyOne.csproj.CopyComplete
