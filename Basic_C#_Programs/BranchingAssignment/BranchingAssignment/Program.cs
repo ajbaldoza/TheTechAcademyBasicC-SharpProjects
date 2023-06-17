@@ -11,6 +11,7 @@ namespace BranchingAssignment
             Console.Write("Please enter the weight of the package in pounds: ");
             decimal weight = decimal.Parse(Console.ReadLine());
 
+          
             if (weight > 50)
             {
                 Console.WriteLine("Package too heavy to be shipped via Package Express. Have a good day.");
@@ -30,7 +31,6 @@ namespace BranchingAssignment
           
 
             if (packagewidth > 50)
-
             {
                 Console.WriteLine("Package too big to be shipped via Package Express.");
                 Console.ReadLine();
@@ -38,7 +38,6 @@ namespace BranchingAssignment
             }
 
             if (packageheight > 50)
-
             {
                 Console.WriteLine("Package too big to be shipped via Package Express.");
                 Console.ReadLine();
@@ -46,16 +45,22 @@ namespace BranchingAssignment
             }
 
             if (packagelength > 50)
-
             {
                 Console.WriteLine("Package too big to be shipped via Package Express.");
                 Console.ReadLine();
                 return; // Exit the program
             }
 
-            decimal volume = packagewidth * packageheight * packagelength;
+            decimal totalvolume = packagewidth * packageheight * packagelength;
 
-            decimal quote = volume * weight;
+            if (totalvolume > 50 )
+            {
+                Console.WriteLine("Package too big to be shipped via Package Express.");
+                Console.ReadLine();
+                return; // Exit the program
+            }
+
+            decimal quote = totalvolume * weight;
 
             decimal finalQuote = quote / 100;
 
