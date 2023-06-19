@@ -28,23 +28,10 @@ namespace BranchingAssignment
             Console.Write("Please enter the length of the package in inches: ");
             decimal packagelength = decimal.Parse(Console.ReadLine());
 
-          
 
-            if (packagewidth > 50)
-            {
-                Console.WriteLine("Package too big to be shipped via Package Express.");
-                Console.ReadLine();
-                return; // Exit the program
-            }
+            decimal totaldimension = packageheight + packagelength + packagewidth;
 
-            if (packageheight > 50)
-            {
-                Console.WriteLine("Package too big to be shipped via Package Express.");
-                Console.ReadLine();
-                return; // Exit the program
-            }
-
-            if (packagelength > 50)
+            if (totaldimension > 50)
             {
                 Console.WriteLine("Package too big to be shipped via Package Express.");
                 Console.ReadLine();
@@ -53,12 +40,6 @@ namespace BranchingAssignment
 
             decimal totalvolume = packagewidth * packageheight * packagelength;
 
-            if (totalvolume > 50 )
-            {
-                Console.WriteLine("Package too big to be shipped via Package Express.");
-                Console.ReadLine();
-                return; // Exit the program
-            }
 
             decimal quote = totalvolume * weight;
 
