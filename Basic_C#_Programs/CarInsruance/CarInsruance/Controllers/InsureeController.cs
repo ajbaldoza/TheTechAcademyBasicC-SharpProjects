@@ -14,13 +14,12 @@ namespace CarInsruance.Controllers
     {
         private InsuranceEntities db = new InsuranceEntities();
 
-        // GET: Insuree
+    
         public ActionResult Index()
         {
             return View(db.Insurees.ToList());
         }
 
-        // GET: Insuree/Details/5
         public ActionResult Details(int? id)
         {
             if (id == null)
@@ -35,19 +34,75 @@ namespace CarInsruance.Controllers
             return View(insuree);
         }
 
-        // GET: Insuree/Create
+       
         public ActionResult Create()
         {
+
             return View();
         }
 
-        // POST: Insuree/Create
-        // To protect from overposting attacks, enable the specific properties you want to bind to, for 
-        // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
+        public ActionResult GetQuote(int age, int carYear, string carMake, string carModel, bool hasDUI, int speedingTickets, bool isFullCoverage)
+        {
+            decimal baseQuote = 50;
+
+            // Age logic
+            if (age <= 18)
+            {
+                baseQuote += 100;
+            }
+            else if (age >= 19 && age <= 25)
+            {
+                baseQuote += 50;
+            }
+            else
+            {
+                baseQuote += 25;
+            }
+
+            // Car year logic
+            if (carYear < 2000)
+            {
+                baseQuote += 25;
+            }
+            else if (carYear > 2015)
+            {
+                baseQuote += 25;
+            }
+
+            // Car make and model logic
+            if (carMake == "Porsche")
+            {
+                baseQuote += 25;
+
+                if (carModel == "911 Carrera")
+                {
+                    baseQuote += 25;
+                }
+            }
+
+            // Speeding ticket logic
+            baseQuote += speedingTickets * 10;
+
+            // DUI logic
+            if (hasDUI)
+            {
+                baseQuote *= 1.25m; // Increase by 25%
+            }
+
+            // Full coverage logic
+            if (isFullCoverage)
+            {
+                baseQuote *= 1.5m; // Increase by 50%
+            }
+
+            return View(baseQuote);
+        }
+
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Create([Bind(Include = "Id,FirstName,LastName,EmailAddress,DateOfBirth,CarYear,CarMake,CarModel,DUI,SpeedingTickets,CoverageType,Quote")] Insuree insuree)
         {
+
             if (ModelState.IsValid)
             {
                 db.Insurees.Add(insuree);
@@ -73,9 +128,7 @@ namespace CarInsruance.Controllers
             return View(insuree);
         }
 
-        // POST: Insuree/Edit/5
-        // To protect from overposting attacks, enable the specific properties you want to bind to, for 
-        // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
+       
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Edit([Bind(Include = "Id,FirstName,LastName,EmailAddress,DateOfBirth,CarYear,CarMake,CarModel,DUI,SpeedingTickets,CoverageType,Quote")] Insuree insuree)
@@ -124,60 +177,60 @@ namespace CarInsruance.Controllers
             base.Dispose(disposing);
         }
     }
-    public ActionResult getQuote(int age, int carYear, string carMake, string carModel, bool hasDUI, int speedingTickets, bool isFullCoverage)
-    {
-        decimal baseQuote = 50;
+    //public ActionResult GetQuote(int age, int carYear, string carMake, string carModel, bool hasDUI, int speedingTickets, bool isFullCoverage)
+    //{
+    //    decimal baseQuote = 50;
 
-        // Age logic
-        if (age <= 18)
-        {
-            baseQuote += 100;
-        }
-        else if (age >= 19 && age <= 25)
-        {
-            baseQuote += 50;
-        }
-        else
-        {
-            baseQuote += 25;
-        }
+    //    // Age logic
+    //    if (age <= 18)
+    //    {
+    //        baseQuote += 100;
+    //    }
+    //    else if (age >= 19 && age <= 25)
+    //    {
+    //        baseQuote += 50;
+    //    }
+    //    else
+    //    {
+    //        baseQuote += 25;
+    //    }
 
-        // Car year logic
-        if (carYear < 2000)
-        {
-            baseQuote += 25;
-        }
-        else if (carYear > 2015)
-        {
-            baseQuote += 25;
-        }
+    //    // Car year logic
+    //    if (carYear < 2000)
+    //    {
+    //        baseQuote += 25;
+    //    }
+    //    else if (carYear > 2015)
+    //    {
+    //        baseQuote += 25;
+    //    }
 
-        // Car make and model logic
-        if (carMake == "Porsche")
-        {
-            baseQuote += 25;
+    //    // Car make and model logic
+    //    if (carMake == "Porsche")
+    //    {
+    //        baseQuote += 25;
 
-            if (carModel == "911 Carrera")
-            {
-                baseQuote += 25;
-            }
-        }
+    //        if (carModel == "911 Carrera")
+    //        {
+    //            baseQuote += 25;
+    //        }
+    //    }
 
-        // Speeding ticket logic
-        baseQuote += speedingTickets * 10;
+    //    // Speeding ticket logic
+    //    baseQuote += speedingTickets * 10;
 
-        // DUI logic
-        if (hasDUI)
-        {
-            baseQuote *= 1.25m; // Increase by 25%
-        }
+    //    // DUI logic
+    //    if (hasDUI)
+    //    {
+    //        baseQuote *= 1.25m; // Increase by 25%
+    //    }
 
-        // Full coverage logic
-        if (isFullCoverage)
-        {
-            baseQuote *= 1.5m; // Increase by 50%
-        }
+    //    // Full coverage logic
+    //    if (isFullCoverage)
+    //    {
+    //        baseQuote *= 1.5m; // Increase by 50%
+    //    }
 
-        return View(baseQuote);
-    }
+    //    return View(baseQuote);
+    //}
 }
